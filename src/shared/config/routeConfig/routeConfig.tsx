@@ -4,21 +4,21 @@ import {AboutPage} from "pages/AboutPage";
 
 export enum AppRoutes {
     MAIN = 'main',
-    ABOUT = 'about'
+    ABOUT = 'about',
 }
 
-export const RouterPatch: Record<AppRoutes, string> = {
+export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.MAIN]: '/',
     [AppRoutes.ABOUT]: '/about'
 }
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.MAIN]: {
-        path: RouterPatch.main,
-        element: <MainPage/>
+        path: RoutePath.main,
+        element: <MainPage />
     },
     [AppRoutes.ABOUT]: {
-        path: RouterPatch.about,
-        element: <AboutPage/>
-    }
+        path: RoutePath.about,
+        element: <AboutPage />
+    },
 }
