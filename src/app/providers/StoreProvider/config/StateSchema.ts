@@ -12,8 +12,8 @@ export interface StateSchema {
     user: UserSchema;
 
     // Асинхронные редюсеры
-    profile?: ProfileSchema;
     loginForm?: LoginSchema;
+    profile?: ProfileSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;
